@@ -1,0 +1,30 @@
+{
+    "name": "nested-text-view-native",
+    "widgetName": "NestedTextViewNative",
+    "version": "1.0.0",
+    "description": "Render nested Text components on native to apply styles to certain words in paragraphs",
+    "copyright": "Mendix 2019",
+    "author": "Conner Charlebois",
+    "config": {
+        "widgetPath": "/Users/conner/mendix/p/NativeReference-main/widgets",
+        "projectPath": "/Users/conner/mendix/p/NativeReference-main"
+    },
+    "packagePath": "mendix",
+    "scripts": {
+        "start": "npm run dev",
+        "build": "pluggable-widgets-tools build:js:native",
+        "dev": "pluggable-widgets-tools start:js:native",
+        "lint": "pluggable-widgets-tools lint",
+        "lint:fix": "pluggable-widgets-tools lint:fix",
+        "prerelease": "npm run lint",
+        "release": "pluggable-widgets-tools release:js:native"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/Conner Charlebois/nested-text-view-native/issues"
+    },
+    "devDependencies": {
+        "@mendix/pluggable-widgets-tools": "^8.9.2"
+    },
+    "dependencies": {}
+}

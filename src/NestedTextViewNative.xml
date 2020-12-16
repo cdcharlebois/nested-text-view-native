@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.nestedtextviewnative.NestedTextViewNative" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Nested Text View Native</name>
+    <description>Render nested Text components on native to apply styles to certain words in paragraphs</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="textItems" type="object" isList="true" required="true">
+              <caption>Text(s)</caption>
+              <description></description>
+              <properties>
+              <propertyGroup caption="Segment">
+                <property key="text" type="string" required="true" multiline="true">
+                  <caption>Text</caption>
+                  <description>The text to render.</description>
+                </property>
+                <property key="color" type="string" required="false" multiline="false">
+                  <caption>Color</caption>
+                  <description></description>
+                </property>
+                <property key="fontSize" type="integer" defaultValue="14" required="true">
+                 <caption>Font Size</caption>
+                  <description></description>
+                </property>
+                <property key="fontStyle" type="enumeration" defaultValue="normal" required="true">
+                  <caption>Font Style</caption>
+                  <description></description>
+                  <enumerationValues>
+                    <enumerationValue key="normal">Normal</enumerationValue>
+                    <enumerationValue key="italic">Italic</enumerationValue>
+                  </enumerationValues>
+                </property>
+                <property key="fontWeight" type="enumeration" defaultValue="normal" required="true">
+                  <caption>Font Weight</caption>
+                  <description></description>
+                  <enumerationValues>
+                    <enumerationValue key="normal">normal</enumerationValue>
+                    <enumerationValue key="bold">bold</enumerationValue>
+                    <enumerationValue key="_100">100</enumerationValue>
+                    <enumerationValue key="_200">200</enumerationValue>
+                    <enumerationValue key="_300">300</enumerationValue>
+                    <enumerationValue key="_400">400</enumerationValue>
+                    <enumerationValue key="_500">500</enumerationValue>
+                    <enumerationValue key="_600">600</enumerationValue>
+                    <enumerationValue key="_700">700</enumerationValue>
+                    <enumerationValue key="_800">800</enumerationValue>
+                    <enumerationValue key="_900">900</enumerationValue>
+                  </enumerationValues>
+                </property>
+                <property key="textTransform" type="enumeration" defaultValue="none" required="true">
+                  <caption>Text Transform</caption>
+                  <description></description>
+                  <enumerationValues>
+                    <enumerationValue key="none">None</enumerationValue>
+                    <enumerationValue key="uppercase">Uppercase</enumerationValue>
+                    <enumerationValue key="lowercase">Lowercase</enumerationValue>
+                    <enumerationValue key="capitalize">Capitalize</enumerationValue>
+                  </enumerationValues>
+                </property>
+                </propertyGroup>
+              </properties>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
